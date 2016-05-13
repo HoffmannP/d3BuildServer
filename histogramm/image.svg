@@ -1,0 +1,254 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+        <style type="text/css">
+            <![CDATA[
+svg {
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+.-bar_rect {
+  fill: steelblue;
+  shape-rendering: crispEdges;
+}
+
+.-bar_text {
+  fill: #fff;
+}
+
+.-axis_path__-axis_line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+]]>
+        </style>
+    </defs>
+</svg>
+<svg width="960" height="500">
+    <g transform="translate(30,10)">
+        <g class="bar" transform="translate(0,460)">
+            <rect x="1" width="44" height="0" class="-bar_rect">
+            </rect>
+            <text dy=".75em" y="6" x="22.5" text-anchor="middle" class="-bar_text">
+                0
+            </text>
+        </g>
+        <g class="bar" transform="translate(45,460)">
+            <rect x="1" width="44" height="0" class="-bar_rect">
+            </rect>
+            <text dy=".75em" y="6" x="22.5" text-anchor="middle" class="-bar_text">
+                0
+            </text>
+        </g>
+        <g class="bar" transform="translate(90,460)">
+            <rect x="1" width="44" height="0" class="-bar_rect">
+            </rect>
+            <text dy=".75em" y="6" x="22.5" text-anchor="middle" class="-bar_text">
+                0
+            </text>
+        </g>
+        <g class="bar" transform="translate(135,460)">
+            <rect x="1" width="44" height="0" class="-bar_rect">
+            </rect>
+            <text dy=".75em" y="6" x="22.5" text-anchor="middle" class="-bar_text">
+                0
+            </text>
+        </g>
+        <g class="bar" transform="translate(180,455.8744394618834)">
+            <rect x="1" width="44" height="4.125560538116588" class="-bar_rect">
+            </rect>
+            <text dy=".75em" y="6" x="22.5" text-anchor="middle" class="-bar_text">
+                2
+            </text>
+        </g>
+        <g class="bar" transform="translate(225,439.372197309417)">
+            <rect x="1" width="44" height="20.627802690582996" class="-bar_rect">
+            </rect>
+            <text dy=".75em" y="6" x="22.5" text-anchor="middle" class="-bar_text">
+                10
+            </text>
+        </g>
+        <g class="bar" transform="translate(270,383.677130044843)">
+            <rect x="1" width="44" height="76.32286995515699" class="-bar_rect">
+            </rect>
+            <text dy=".75em" y="6" x="22.5" text-anchor="middle" class="-bar_text">
+                37
+            </text>
+        </g>
+        <g class="bar" transform="translate(315,305.2914798206278)">
+            <rect x="1" width="44" height="154.70852017937221" class="-bar_rect">
+            </rect>
+            <text dy=".75em" y="6" x="22.5" text-anchor="middle" class="-bar_text">
+                75
+            </text>
+        </g>
+        <g class="bar" transform="translate(360,121.70403587443946)">
+            <rect x="1" width="44" height="338.29596412556054" class="-bar_rect">
+            </rect>
+            <text dy=".75em" y="6" x="22.5" text-anchor="middle" class="-bar_text">
+                164
+            </text>
+        </g>
+        <g class="bar" transform="translate(405,33.00448430493273)">
+            <rect x="1" width="44" height="426.9955156950673" class="-bar_rect">
+            </rect>
+            <text dy=".75em" y="6" x="22.5" text-anchor="middle" class="-bar_text">
+                207
+            </text>
+        </g>
+        <g class="bar" transform="translate(450,0)">
+            <rect x="1" width="44" height="460" class="-bar_rect">
+            </rect>
+            <text dy=".75em" y="6" x="22.5" text-anchor="middle" class="-bar_text">
+                223
+            </text>
+        </g>
+        <g class="bar" transform="translate(495.00000000000006,171.21076233183854)">
+            <rect x="1" width="44" height="288.7892376681615" class="-bar_rect">
+            </rect>
+            <text dy=".75em" y="6" x="22.5" text-anchor="middle" class="-bar_text">
+                140
+            </text>
+        </g>
+        <g class="bar" transform="translate(540,278.47533632286996)">
+            <rect x="1" width="44" height="181.52466367713004" class="-bar_rect">
+            </rect>
+            <text dy=".75em" y="6" x="22.5" text-anchor="middle" class="-bar_text">
+                88
+            </text>
+        </g>
+        <g class="bar" transform="translate(585,381.6143497757847)">
+            <rect x="1" width="44" height="78.38565022421528" class="-bar_rect">
+            </rect>
+            <text dy=".75em" y="6" x="22.5" text-anchor="middle" class="-bar_text">
+                38
+            </text>
+        </g>
+        <g class="bar" transform="translate(630,435.2466367713004)">
+            <rect x="1" width="44" height="24.753363228699584" class="-bar_rect">
+            </rect>
+            <text dy=".75em" y="6" x="22.5" text-anchor="middle" class="-bar_text">
+                12
+            </text>
+        </g>
+        <g class="bar" transform="translate(675,453.8116591928251)">
+            <rect x="1" width="44" height="6.188340807174882" class="-bar_rect">
+            </rect>
+            <text dy=".75em" y="6" x="22.5" text-anchor="middle" class="-bar_text">
+                3
+            </text>
+        </g>
+        <g class="bar" transform="translate(720,457.9372197309417)">
+            <rect x="1" width="44" height="2.062780269058294" class="-bar_rect">
+            </rect>
+            <text dy=".75em" y="6" x="22.5" text-anchor="middle" class="-bar_text">
+                1
+            </text>
+        </g>
+        <g class="bar" transform="translate(765,460)">
+            <rect x="1" width="44" height="0" class="-bar_rect">
+            </rect>
+            <text dy=".75em" y="6" x="22.5" text-anchor="middle" class="-bar_text">
+                0
+            </text>
+        </g>
+        <g class="bar" transform="translate(810,460)">
+            <rect x="1" width="44" height="0" class="-bar_rect">
+            </rect>
+            <text dy=".75em" y="6" x="22.5" text-anchor="middle" class="-bar_text">
+                0
+            </text>
+        </g>
+        <g class="bar" transform="translate(855,460)">
+            <rect x="1" width="44" height="0" class="-bar_rect">
+            </rect>
+            <text dy=".75em" y="6" x="22.5" text-anchor="middle" class="-bar_text">
+                0
+            </text>
+        </g>
+        <g class="x axis" transform="translate(0,460)">
+            <g class="tick" style="opacity: 1;" transform="translate(0,0)">
+                <line y2="6" x2="0" class="-axis_path__-axis_line">
+                </line>
+                <text dy=".71em" style="text-anchor: middle;" y="9" x="0">
+                    0.0
+                </text>
+            </g>
+            <g class="tick" style="opacity: 1;" transform="translate(90,0)">
+                <line y2="6" x2="0" class="-axis_path__-axis_line">
+                </line>
+                <text dy=".71em" style="text-anchor: middle;" y="9" x="0">
+                    0.1
+                </text>
+            </g>
+            <g class="tick" style="opacity: 1;" transform="translate(180,0)">
+                <line y2="6" x2="0" class="-axis_path__-axis_line">
+                </line>
+                <text dy=".71em" style="text-anchor: middle;" y="9" x="0">
+                    0.2
+                </text>
+            </g>
+            <g class="tick" style="opacity: 1;" transform="translate(270,0)">
+                <line y2="6" x2="0" class="-axis_path__-axis_line">
+                </line>
+                <text dy=".71em" style="text-anchor: middle;" y="9" x="0">
+                    0.3
+                </text>
+            </g>
+            <g class="tick" style="opacity: 1;" transform="translate(360,0)">
+                <line y2="6" x2="0" class="-axis_path__-axis_line">
+                </line>
+                <text dy=".71em" style="text-anchor: middle;" y="9" x="0">
+                    0.4
+                </text>
+            </g>
+            <g class="tick" style="opacity: 1;" transform="translate(450,0)">
+                <line y2="6" x2="0" class="-axis_path__-axis_line">
+                </line>
+                <text dy=".71em" style="text-anchor: middle;" y="9" x="0">
+                    0.5
+                </text>
+            </g>
+            <g class="tick" style="opacity: 1;" transform="translate(540,0)">
+                <line y2="6" x2="0" class="-axis_path__-axis_line">
+                </line>
+                <text dy=".71em" style="text-anchor: middle;" y="9" x="0">
+                    0.6
+                </text>
+            </g>
+            <g class="tick" style="opacity: 1;" transform="translate(630,0)">
+                <line y2="6" x2="0" class="-axis_path__-axis_line">
+                </line>
+                <text dy=".71em" style="text-anchor: middle;" y="9" x="0">
+                    0.7
+                </text>
+            </g>
+            <g class="tick" style="opacity: 1;" transform="translate(720,0)">
+                <line y2="6" x2="0" class="-axis_path__-axis_line">
+                </line>
+                <text dy=".71em" style="text-anchor: middle;" y="9" x="0">
+                    0.8
+                </text>
+            </g>
+            <g class="tick" style="opacity: 1;" transform="translate(810,0)">
+                <line y2="6" x2="0" class="-axis_path__-axis_line">
+                </line>
+                <text dy=".71em" style="text-anchor: middle;" y="9" x="0">
+                    0.9
+                </text>
+            </g>
+            <g class="tick" style="opacity: 1;" transform="translate(900,0)">
+                <line y2="6" x2="0" class="-axis_path__-axis_line">
+                </line>
+                <text dy=".71em" style="text-anchor: middle;" y="9" x="0">
+                    1.0
+                </text>
+            </g>
+            <path class="domain -axis_path__-axis_line" d="M0,6V0H900V6">
+            </path>
+        </g>
+    </g>
+</svg>

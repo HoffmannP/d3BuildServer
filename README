@@ -1,0 +1,5 @@
+bind to /tmp
+run docker run -v $(pwd):/tmp d3
+
+to build run
+docker build -t d3 .
