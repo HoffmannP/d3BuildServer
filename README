@@ -1,5 +1,16 @@
-bind to /tmp
-run docker run -v $(pwd):/tmp d3
+= D3.js builder =
 
-to build run
-docker build -t d3 .
+== docker image for commandline ==
+
+=== build ===
+
+    docker build -t d3builder .
+
+=== run ===
+
+    run docker run -v $(pwd):/tmp d3builder
+
+
+== as a server ==
+
+deploy server.js along with d3Builder.js

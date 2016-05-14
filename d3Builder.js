@@ -1,10 +1,4 @@
-main(
-    "/tmp/" + process.argv[2],
-    "/tmp/" + process.argv[3],
-    "/tmp/" + process.argv[4]
-);
-
-function main(script, style, image) {
+exports.build = function (script, style, image) {
     const jsdom = require('jsdom');
     const emptyChart = '<svg></svg>';
     jsdom.env(
