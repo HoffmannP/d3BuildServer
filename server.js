@@ -16,7 +16,10 @@ function main() {
 
 function handleRequest(request, response) {
     const fs = require("fs"),
-        d3Builder = require('./d3Builder.js')
+        d3Builder = require('./d3Builder.js');
+
+    console.log(d3Builder.build);
+
     const graph = "/tmp/graph.svg";
 
     d3Builder.build(
