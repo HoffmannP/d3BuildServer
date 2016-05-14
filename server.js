@@ -1,4 +1,4 @@
-main(8080);
+main(80);
 
 function main(port) {
     const http = require('http');
