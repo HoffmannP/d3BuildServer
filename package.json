@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "description": "building d3 graphs to an inclusive svg file",
     "bugs": "https://github.com/HoffmannP/d3Builder/issues",
-    "licence": "GPL-3.0",
+    "license": "GPL-3.0",
     "author": "Berengar W. Lehr <Hoffmann.P@gmx.net>",
     "repository": {
         "type": "git",
