@@ -10,7 +10,6 @@ function main() {
         if (err) {
             return console.error(err);
         }
-        //Callback triggered when server is successfully listening. Hurray!
         console.log("Server listening on: http://localhost:%s", port);
     });
 }
@@ -18,15 +17,16 @@ function main() {
 function handleRequest(request, response) {
     const fs = require("fs"),
         d3Builder = require('./d3Builder.js')
+    const graph = "/tmp/graph.svg";
 
     d3Builder.build(
         "histogramm/script.js",
         "histogramm/style.css",
-        "tmp/graph.svg"
+        graph
     );
 
     response.writeHead(200, {'Content-Type': 'image/svg+xml'});
-    response.write(fs.readFileSync("tmp/graph.svg"));
+    response.write(fs.readFileSync(graph));
     response.end();
 }
 

@@ -1,6 +1,6 @@
 exports.build = function (script, style, image) {
     const jsdom = require('jsdom');
-    const emptyChart = '<svg></svg>';
+    const emptyChart = '';
     jsdom.env(
         emptyChart,
         function (err, window) {
@@ -9,6 +9,9 @@ exports.build = function (script, style, image) {
                     'error creating the document',
                     err
                 );
+            }
+            if (script.substr(0, 1) != '/') {
+                script = './' + script;
             }
             createChart(
                 script,
