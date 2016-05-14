@@ -1,7 +1,13 @@
+const http = require('http'),
+    fs = require("fs"),
+    syncRequest = require('sync-request'),
+    querystring = require('querystring'),
+    mktemp = require('mktemp');
+    d3Builder = require('./d3Builder.js');
+
 main();
 
 function main() {
-    const http = require('http');
     const port = process.env.app_port || 8080;
 
     var server = http.createServer(handleRequest);
@@ -15,18 +21,37 @@ function main() {
 }
 
 function handleRequest(request, response) {
-    const fs = require("fs"),
-        d3Builder = require('./d3Builder.js');
-    const graph = "/tmp/graph.svg";
+    var tmpDir = fs.mkdtempSync('/tmp/d3Builder-') + '/',
+        script = tmpDir + "script.js",
+        style = tmpDir + "style.css",
+        graph = tmpDir + "graph.svg";
 
-    d3Builder.build(
-        "histogramm/script.js",
-        "histogramm/style.css",
-        graph
-    );
+    var path = request.url;
+    var parameter = querystring.parse(path.substr(path.indexOf('?') + 1));
 
-    response.writeHead(200, {'Content-Type': 'image/svg+xml'});
-    response.write(fs.readFileSync(graph));
-    response.end();
+    if (('script' in parameter) && ('style' in parameter)) {
+        download(script, parameter['script']);
+        download(style, parameter['style']);
+        d3Builder.build(script, style, graph, giveResponse.bind(response));
+    } else {
+        response.writeHead(200, {'Content-Type': 'text/plain'});
+        response.write("use 'script' and 'style' as get parameter");
+        response.end();
+    }
 }
 
+function download(fileName, url) {
+    fs.writeFileSync(
+        fileName,
+        syncRequest(
+            'GET',
+            url
+        ).body
+    );
+}
+
+function giveResponse(image) {
+    this.writeHead(200, {'Content-Type': 'image/svg+xml'});
+    this.write(fs.readFileSync(image));
+    this.end();
+}

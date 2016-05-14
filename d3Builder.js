@@ -1,4 +1,4 @@
-exports.build = function (script, style, image) {
+exports.build = function (script, style, image, callback) {
     const jsdom = require('jsdom');
     const emptyChart = '';
     jsdom.env(
@@ -19,6 +19,9 @@ exports.build = function (script, style, image) {
                 image,
                 window
             )
+            if (callback) {
+                callback(image);
+            }
         }
     );
 }
@@ -26,7 +29,7 @@ exports.build = function (script, style, image) {
 function createChart(script, style, image, window) {
     const d3 = require('d3'),
         fs = require('fs'),
-        chartScript = require('./' + script);
+        chartScript = require(script);
 
     chartScript(d3, window);
     insertCSS(selector2class(
@@ -78,16 +81,8 @@ function writeImage(fileName, image) {
     const doctype = '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">';
     const xml = '<?xml version="1.0" standalone="no"?>';
 
-    fs.writeFile(
+    return fs.writeFileSync(
         fileName,
-        xml + "\n" + beautify(doctype + image),
-        function (err) {
-            if (err) {
-                console.log(
-                    'error saving document',
-                    err
-                )
-            }
-        }
+        xml + "\n" + beautify(doctype + image)
     );
 }

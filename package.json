@@ -13,6 +13,7 @@
         "d3": "3.x",
         "jsdom": "9.x",
         "xml-beautifier": "0.x",
-        "css": "2.x"
+        "css": "2.x",
+        "sync-request": "3.x"
     }
 }
