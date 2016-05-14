@@ -1,7 +1,8 @@
-main(80);
+main();
 
-function main(port) {
+function main() {
     const http = require('http');
+    const port = process.env.app_port || 8080;
 
     var server = http.createServer(handleRequest);
 
@@ -24,7 +25,8 @@ function handleRequest(request, response) {
         "tmp/graph.svg"
     );
 
-    response.setHeader('Content-Type', 'image/svg+xml');
-    response.end(fs.readFileSync("tmp/graph.svg"));
+    response.writeHead(200, {'Content-Type': 'image/svg+xml'});
+    response.write(fs.readFileSync("tmp/graph.svg"));
+    response.end();
 }
 

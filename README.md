@@ -1,16 +1,16 @@
-= D3.js builder =
+# D3.js builder
 
-== docker image for commandline ==
+## docker image for commandline
 
-=== build ===
+### build
 
     docker build -t d3builder .
 
-=== run ===
+### run
 
     run docker run -v $(pwd):/tmp d3builder
 
 
-== as a server ==
+## as a server
 
 deploy server.js along with d3Builder.js
